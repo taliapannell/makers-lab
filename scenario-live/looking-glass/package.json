@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "holoplay": "^1.0.3",
+    "three": "^0.184.0"
+  }
+}
