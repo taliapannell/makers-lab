@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova — Looking Glass (Scaffold)</title>
+
+    <!--
+      Minimal styling: remove the default page margin and hide scrollbars so the
+      Three.js <canvas> can fill the entire window edge-to-edge. The canvas itself
+      is created by Three.js in main.js and appended to <body>.
+    -->
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* no scrollbars — the 3D canvas owns the whole screen */
+        background: #000; /* black background while the scene loads */
+      }
+      canvas {
+        display: block; /* removes the tiny gap browsers add below inline canvases */
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      type="module" is what lets us use `import` statements in main.js.
+      Vite reads this script tag, bundles main.js (and its `import 'three'`),
+      and serves it to the browser during development.
+    -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
